@@ -16,6 +16,7 @@ int main() {
 	b.display();
 	b.changeGear();
 	b.display();
+	a.whereAmI();
 	
 	return 0;
 }
