@@ -19,20 +19,20 @@ public:
 	
 	void changeGear(int g = 4) {
 		gear = g;
-		cout << name << " -> Gear Change!" << endl;
+		cout << "\t" << name << " -> Gear Change!" << endl;
 	}
 	
 	void speedUp() {
 		speed += 5;
-		cout << name << " -> Speed up!" << endl;
+		cout << "\t" << name << " -> Speed up!" << endl;
 	}
 
 	void display() {
-		printf("[%s] : Gear = %d, Speed = %dkm/h\n", name, gear, speed);
+		printf("[%s] \nGear = %d, Speed = %dkm/h\n", name, gear, speed);
 	}
 
 	void whereAmI() {
-		printf("object Address = %x\n", this);
+		cout << "Address of ["<< name << "] -> " << this << endl;
 	}
 };
 
@@ -45,15 +45,28 @@ public:
 	void setTurbo(bool bTur) {
 		bTurbo = bTur;
 		if (bTurbo == 1) {
-			cout << name << " -> Turbo on!" << endl;
+			cout << "\t" << name << " -> Turbo on!" << endl;
 		}
 		else {
-			cout << name << " -> Turbo off" << endl;
+			cout << "\t" << name << " -> Turbo off" << endl;
 		}
 	}
 	void speedUp() {
-		if (bTurbo)
+		if (bTurbo) {
 			speed += 20;
+			cout << "\t" << name << " -> Speed up!" << endl;
+		}
 		else Car::speedUp();
+	}
+	void display() {
+		if (bTurbo == 0) {
+			printf("[%s] \nGear = %d, Speed = %dkm/h, Turbo = off \n", name, gear, speed);
+		}
+		else if (bTurbo == 1) {
+			printf("[%s] \nGear = %d, Speed = %dkm/h, Turbo = On \n", name, gear, speed);
+		}
+		else {
+			Car::display();
+		}
 	}
 };
