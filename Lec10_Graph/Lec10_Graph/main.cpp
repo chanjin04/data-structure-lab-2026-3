@@ -3,7 +3,7 @@
 int main() {
 	//AdjMatGraph g;    // 새로운 그래프 객체 생성
     SrchAMGraph g;  // DFS 탐색기능이 있는 그래프 객체 생성
-
+	
 	for(int i = 0; i < 7; i++)
         g.insertVertex('A' + i);	// 정점 삽입: 'A' 'B', ...
     g.insertEdge(0, 1);      	// 간선 삽입

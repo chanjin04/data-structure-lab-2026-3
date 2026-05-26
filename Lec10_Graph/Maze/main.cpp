@@ -26,7 +26,7 @@ int main() {
 	//while (locStack.empty() == false) {
 		//Location2D here = locStack.top();
 		//locStack.pop();
-		
+
 		//int r = here.row, c = here.col;
 		//printf("(%d,%d) ", r, c);
 		//if (map[r][c] == 'x') {
@@ -82,8 +82,8 @@ int main() {
 	locQueue.push_front(entry);
 
 	while (locQueue.empty() == false) {
-		Location2D here = locQueue.back();
-		locQueue.pop_back();
+		Location2D here = locQueue.front(); 
+		locQueue.pop_back();                  
 
 		int r = here.row, c = here.col;
 		printf("(%d,%d) ", r, c);
