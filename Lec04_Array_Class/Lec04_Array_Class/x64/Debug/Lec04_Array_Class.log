@@ -1,9 +1,0 @@
-﻿  ComplexText.cpp
-C:\Users\USER\Documents\data-structure-lab-2026-3\.git\Lec04_Array_Class\Lec04_Array_Class\Complex.h(14,11): warning C4477: 'scanf_s' : 서식 문자열 '%i'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double *'입니다.
-  (소스 파일 'ComplexText.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\USER\Documents\data-structure-lab-2026-3\.git\Lec04_Array_Class\Lec04_Array_Class\Complex.h(14,11): warning C4477: 'scanf_s' : 서식 문자열 '%i'에 'int *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double *'입니다.
-  (소스 파일 'ComplexText.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\USER\Documents\data-structure-lab-2026-3\.git\Lec04_Array_Class\Lec04_Array_Class\ComplexText.cpp(3,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  Lec04_Array_Class.vcxproj -> C:\Users\USER\Documents\data-structure-lab-2026-3\.git\Lec04_Array_Class\x64\Debug\Lec04_Array_Class.exe
